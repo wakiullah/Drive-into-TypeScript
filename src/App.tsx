@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import "./App.css";
+import InfoBox from "./components/warning";
 
 type Note = {
   title: string;
@@ -26,10 +27,18 @@ function App() {
     }
   };
 
+  let Warning: ReactNode;
+
+  if (notes.length > 5) {
+    Warning = <InfoBox mode="warning" level="medium" />;
+  } else {
+    Warning = <InfoBox mode="hint" />;
+  }
+
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-8">Create Note</h1>
-
+      {Warning}
       <form onSubmit={handleSubmit} className="mb-8">
         <div className="mb-4">
           <input
