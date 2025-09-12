@@ -2,7 +2,7 @@ import { useState, type ReactNode } from "react";
 import "./App.css";
 import InfoBox from "./components/warning";
 
-type Note = {
+interface Note {
   title: string;
   description: string;
   id: number;
