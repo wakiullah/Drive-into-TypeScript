@@ -58,7 +58,7 @@ function App() {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={4}
-            className="w-full p-3 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
+            className="w-full p-3 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"
           />
         </div>
 
