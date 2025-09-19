@@ -22,7 +22,7 @@ function InfoBox(props: InfoBoxProps) {
         }`}
       >
         <div className="flex items-center">
-          <div className="text-yellow-600 mr-3">⚠️</div>
+          <div className="text-yellow-600 mr-3">⚠️Warning</div>
           <div>
             <h3 className="text-yellow-800 font-medium">Warning</h3>
             <p className="text-yellow-700 text-sm">
